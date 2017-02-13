@@ -15,7 +15,6 @@ class WeiboSpiderSpider(scrapy.Spider):
                   '2973825563','6042041854','5399305296','6112967033','5958250307','5899993712'] # 爬取入口微博ID
     task_set = set(start_urls) # 待爬取集合
     tasked_set = set() # 已爬取集合
-    scrapy.core
     def start_requests(self):
         while len(self.task_set) > 0 :
             _id = self.task_set.pop()
